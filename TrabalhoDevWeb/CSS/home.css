@@ -1,0 +1,121 @@
+@import url('vitrine.css');
+@import url('depoimentos.css');
+@import url('footer.css');
+:root{
+    --color-primary-1: #558BCD;
+    --color-primary-2: #3E91F7;
+    --color-primary-3: #4E7BA5;
+    --color-primary-4: #00ffc8;
+    --color-primary-5: #2291FA;
+    --color-primary-6: #4E7BA5;
+
+    --color-neutra-1:#1d1d1d;
+    --color-neutra-2:#fff;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;   
+}
+.btn-default{
+    background-color: var(--color-primary-5);
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    transition: background-color .3s ease;
+    color: var(--color-neutra-2);
+}
+.btn-default:hover{
+    background-color: var(--color-primary-3);
+}
+.home{
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+.cta{
+    width: 35%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.cta .title{
+    font-size: 4rem;
+    color: var(--color-neutra-1);
+}
+.cta .title span{
+    color: var(--color-primary-6);
+}
+.cta .descricao{
+    font-size: 1.2rem;
+}
+.cta-buttons{
+    display: flex;
+    gap: 24px;
+}
+.cta-buttons a{
+    color: var(--color-neutra-1);
+}
+.phone-button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--color-neutra-2);
+    padding: 8px 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+}
+.banner{
+    display: flex;
+    margin: auto;
+}
+.banner img{
+    display: flex;
+    margin: auto;
+}
+.section-title{
+    color: var(--color-primary-6);
+    font-size: 2rem;
+    text-align: center;
+}
+.section-subtitle{
+    text-align: center;
+    font-size: 2.1875rem;
+}
+
+@media screen and (max-width: 980px) {
+    .banner{
+        display: none;
+    }
+    .cta{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .home{
+        min-height: 100%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .descricao{
+        font-size: 2rem;
+    }
+}
